@@ -61,13 +61,6 @@ $(".list-group").on("click", "p", function() {
     
     tasks[status][index].text = text;
     saveTasks();
-
-    var taskP = $("<p>")
-    .addClass("m-1")
-    .text(text);
-
-    $(this).replaceWith(taskP);
-    
   });
   var text = $(this)
     .text()
