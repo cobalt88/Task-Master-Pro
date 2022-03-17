@@ -8,7 +8,7 @@ var createTask = function(taskText, taskDate, taskList) {
     .text(taskDate);
   var taskP = $("<p>")
     .addClass("m-1")
-    .text(taskText);
+    .text(text);
 
   // append span and p element to parent li
   taskLi.append(taskSpan, taskP);
@@ -67,7 +67,7 @@ $(".list-group").on("click", "p", function() {
     .text(text);
 
     $(this).replaceWith(taskP);
-    
+
   });
   var text = $(this)
     .text()
